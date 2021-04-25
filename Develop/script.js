@@ -141,3 +141,10 @@ $("#saveBtn8").on("click", function(event){
     console.log("stored value is: " + localStorage.getItem("savedText8"));
     
 });
+
+//sets textfield to stored value on page load
+for (let i = 0; i < 9; i++) {
+    document.getElementById("timeBlockInput" +i).value = localStorage.getItem("savedText"+i);
+    console.log("Changing text of "+ "timeBlockInput" + i + " to " + localStorage.getItem("savedText"+i));
+    
+}
